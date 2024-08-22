@@ -1,0 +1,49 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container pt-4">
+  <div class="col-lg-4 mx-auto shadow p-0 mt-5">
+    <div class="alert alert-info">
+      <h2>Login here</h2>
+
+    </div>
+    
+    <div class="p-5">
+      <form action="/Login/" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <hr>
+        <input type="submit" value="Login" class="btn btn-warning">
+        <p>create account here <a href="/signup">signup</a></p>
+  
+      </form>
+    </div>
+   </div>
+ </div>
+
+
+
+{% endblock %}
+
+   <div class="container pt-4">
+    <div class="col-lg-4 mx-auto shadow p-0 mt-5">
+      <div class="alert alert-info">
+        <h2>Login here</h2>
+  
+      </div>
+      
+      <div class="p-5">
+        <form action="/Login/" method="POST">
+          {% csrf_token %}
+          {{form.as_p}}
+          <hr>
+          <input type="submit" value="Login" class="btn btn-warning">
+    
+        </form>
+      </div>
+     </div>
+   </div>
+  
+
+   
